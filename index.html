@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment</title>
+    <!--Script element in head-->
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <!--Script tag before page's html-->
+    <script>
+        function f2(){
+            alert("Go back!");
+        }
+    </script>
+    <h1>Task#7(Chap1)</h1>
+    <div>
+        <label for="">Name </label>
+        <input type="text">
+        <button type="submit" onclick="myFunction()">Submit</button>
+        <button onclick="f2()">Back</button>
+        <button onclick="f3()">Retry</button>
+        <!--Script tag inside page's html -->
+        <script>
+            function myFunction() {
+                alert("information saved");
+            }
+        </script>
+    </div>
+    <!--Using script tag after the page's HTML-->
+    <script>
+        function f3(){
+            alert("Try again!");
+        }
+    </script>
+</body>
+</html>
